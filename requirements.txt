@@ -1,0 +1,2 @@
+customtkinter==5.2.2
+tk==0.1.0
