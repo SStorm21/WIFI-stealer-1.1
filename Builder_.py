@@ -95,7 +95,7 @@ def start_():
     # Labels and frame
     logo = CTkLabel(master=window, text="Storm", text_color="red", font=("bold", 40))
     logo2 = CTkLabel(master=window, text="WIFI-STEALER", text_color="white", font=("bold", 45))
-    info = CTkLabel(master=window, text="t.me/XzaStorm discord: .6_g, Warning: Edu use only!", text_color="white", font=("bold", 10))
+    info = CTkLabel(master=window, text=" discord: .6_g, Warning: Edu use only!", text_color="white", font=("bold", 10))
     label = CTkLabel(master=F_, text="Discord Webhook URL", text_color="red", font=("bold", 15))
     
     # Entry fields
