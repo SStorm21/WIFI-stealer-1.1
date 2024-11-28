@@ -83,7 +83,7 @@ def start_():
     global link
     window = CTk()
     window.title("Storm WIFI Stealer-2.0")
-    window.geometry("400x450+200+100")
+    window.geometry("400x450+700+100")
     window.resizable(False, False)
     window.configure(fg_color="black")
     
@@ -95,7 +95,7 @@ def start_():
     # Labels and frame
     logo = CTkLabel(master=window, text="Storm", text_color="red", font=("bold", 40))
     logo2 = CTkLabel(master=window, text="WIFI-STEALER", text_color="white", font=("bold", 45))
-    info = CTkLabel(master=window, text=" discord: .6_g, Warning: Edu use only!", text_color="white", font=("bold", 10))
+    info = CTkLabel(master=window, text="discord: .6_g, Warning: Edu use only!", text_color="white", font=("bold", 10))
     label = CTkLabel(master=F_, text="Discord Webhook URL", text_color="red", font=("bold", 15))
     
     # Entry fields
@@ -114,8 +114,8 @@ def start_():
     link.place(x=-10, y=50)
     F_.pack(side='bottom', pady=20)
     logo.pack(side='top', pady=60)
-    logo2.place(x=60, y=100)
-    info.place(x=81, y=430)
+    logo2.place(x=40, y=100)
+    info.place(x=110, y=430)
     button_.place(x=55, y=170)
     exit_button.place(x=55, y=200)
 
