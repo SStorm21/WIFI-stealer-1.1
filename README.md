@@ -1,4 +1,4 @@
-# WIFI Stealer 1.1
+# WIFI Stealer 1.1 beta
 
 <p align= "center">  <img  src="https://imgur.com/jEgI0ts.png">
   
