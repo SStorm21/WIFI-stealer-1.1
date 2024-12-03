@@ -86,13 +86,11 @@ def start_():
     F_ = CTkFrame(master=window, fg_color="black", height=250, width=250,
                    border_width=2, border_color="red", corner_radius=12)
     
-    # Labels and frame
     logo = CTkLabel(master=window, text="Storm", text_color="red", font=("bold", 40))
     logo2 = CTkLabel(master=window, text="WIFI-STEALER", text_color="white", font=("bold", 45))
     info = CTkLabel(master=window, text="discord: .6_g, Warning: Edu use only!", text_color="white", font=("bold", 10))
     label = CTkLabel(master=F_, text="Discord Webhook URL", text_color="red", font=("bold", 15))
     
-    # Entry fields
     link = CTkEntry(F_, fg_color="black", border_width=2, border_color="red", height=50, 
                     placeholder_text_color="white", corner_radius=12, width=420, 
                     text_color="red", font=("", 15))
@@ -103,7 +101,6 @@ def start_():
     exit_button = CTkButton(F_, text="Exit", fg_color="black", border_color="red", border_width=2,
                             bg_color="black", hover_color="darkred", command=exit_)     
 
-    # Pack and place
     label.place(x=55, y=20)
     link.place(x=-10, y=50)
     F_.pack(side='bottom', pady=20)
