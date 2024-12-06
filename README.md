@@ -1,18 +1,44 @@
-# WIFI password grabber 2.0 beta
+# 🌐 WIFI Password Grabber 2.0 Beta
 
-                                                  🛑 This project is under development 🛑
-<p align= "center">  <img  src="https://imgur.com/jEgI0ts.png">
+<p align="center">
+  <img src="https://imgur.com/jEgI0ts.png" alt="WIFI Password Grabber Logo" width="400">
+</p>
 
+---
 
-python script, steal the wireless interface ssids and passwords then send it to your discord webhook.
+🚧 **This project is under development** 🚧
 
-images: 
-<p align= "center">  <img  src="https://imgur.com/PyUQuDQ.png">
-<p align= "center">  <img  src="https://imgur.com/K8ohv5U.png">
+---
 
-usage example:
-<p align= "center">  <img src="https://imgur.com/tCkzYlv.png">
+## 📜 Overview
 
+This Python script extracts the SSIDs and passwords from the wireless interfaces of the machine it runs on and sends the data securely to your Discord webhook.
 
-note
-+ only work on ns machines (windows)
+---
+
+## 📷 Screenshots
+
+### Interface and Workflow
+<p align="center">
+  <img src="https://imgur.com/PyUQuDQ.png" alt="Interface Screenshot" width="600">
+  <img src="https://imgur.com/K8ohv5U.png" alt="Workflow Screenshot" width="600">
+</p>
+
+---
+
+## 🔧 Usage Example
+<p align="center">
+  <img src="https://imgur.com/tCkzYlv.png" alt="Usage Example Screenshot" width="600">
+</p>
+
+---
+
+## 📌 Notes
+
+- ❗ This script works exclusively on **Windows** machines.
+- 🛡️ Please use responsibly and ensure compliance with all applicable laws.
+
+---
+
+👨‍💻 **Contributions:**  
+Feel free to contribute or report issues by opening an [issue](#) or submitting a [pull request](#).  
