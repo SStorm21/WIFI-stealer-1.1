@@ -28,7 +28,7 @@ This Python script extracts the SSIDs and passwords from the wireless interfaces
 
 ## 🔧 Usage Example
 <p align="center">
-  <img src="https://imgur.com/tCkzYlv.png" alt="Usage Example Screenshot" width="600">
+  <img src="https://imgur.com/Qm9tN5c.png" alt="Usage Example Screenshot" width="600">
 </p>
 
 ---
